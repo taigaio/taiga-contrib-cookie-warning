@@ -1,5 +1,5 @@
 {
-    "name": "Cookie warning message",
+    "name": "taiga-contrib-cookie-warning",
     "slug": "cookie-warning",
     "description": "Show cookie warning message.",
     "type": "misc",
