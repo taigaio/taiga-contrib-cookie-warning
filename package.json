@@ -1,0 +1,16 @@
+{
+    "name": "taiga-contrib-cookie-warning",
+    "version": "1.10.o",
+    "scripts": {
+        "clean": "rm -rf dist || true",
+        "create-dist": "mkdir -p dist",
+        "copy-statics": "cp cookie-warning.json dist/; cp -r images dist/",
+        "build-scss": "node_modules/node-sass/bin/node-sass --output-style compressed cookie-warning.scss dist/cookie-warning.css",
+        "build-coffee": "cat cookie-warning.coffee | node_modules/coffee-script/bin/coffee --compile --stdio > dist/cookie-warning.js",
+        "build": "npm run clean; npm run create-dist;  npm run copy-statics; npm run build-scss; npm run build-coffee"
+    },
+    "dependencies": {
+        "coffee-script": "^1.10.0",
+        "node-sass": "^3.4.2"
+    }
+}
