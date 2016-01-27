@@ -1,6 +1,12 @@
 {
     "name": "taiga-contrib-cookie-warning",
-    "version": "1.10.o",
+    "version": "1.10.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taigaio/taiga-contrib-cookie-warning.git"
+    },
+    "license": "AGPL-3.0",
+    "author": "Taiga Agile LLC",
     "scripts": {
         "clean": "rm -rf dist || true",
         "create-dist": "mkdir -p dist",
