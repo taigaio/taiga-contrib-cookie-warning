@@ -17,7 +17,7 @@ Download in your `dist/plugins/` directory of Taiga front the `taiga-contrib-coo
   cd dist/
   mkdir -p plugins
   cd plugins
-  svn export "https://github.com/taigaio/taiga-contrib-cookie-warning/tags/stable/dist"  "cookie-warning"
+  svn export "https://github.com/taigaio/taiga-contrib-cookie-warning/branches/stable/dist"  "cookie-warning"
 ```
 
 Include in your dist/conf.json in privacyPolicyUrl the url to the information of your Privacy Policy and in the contribPlugins list the value `"/plugins/cookie-warning/cookie-warning.json"`:
