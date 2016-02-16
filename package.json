@@ -1,6 +1,6 @@
 {
     "name": "taiga-contrib-cookie-warning",
-    "version": "1.10.0",
+    "version": "2.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/taigaio/taiga-contrib-cookie-warning.git"
