@@ -4,7 +4,7 @@ var $ = require('gulp-load-plugins')();
 var paths = {
     styles: 'styles/*.scss',
     coffee: 'coffee/*.coffee',
-    images: 'images/',
+    images: 'images/**/*',
     dist: 'dist/'
 };
 
@@ -15,7 +15,7 @@ gulp.task('copy-config', function() {
 
 gulp.task('copy-images', function() {
     return gulp.src(paths.images)
-        .pipe(gulp.dest(paths.dist));
+        .pipe(gulp.dest(paths.dist + "images"));
 });
 
 gulp.task('compile-coffee', function() {
