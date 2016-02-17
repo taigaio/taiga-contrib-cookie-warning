@@ -38,10 +38,17 @@ Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the informatio
 #### Taiga Front
 
 ```bash
-  cd taiga-front-dist
+  npm install
+  gulp
+```
+
+Link `dist` in `taiga-front` plugins directory:
+
+```bash
+  cd taiga-front/dist
   mkdir -p plugins
   cd plugins
-  ln -s ../../../taiga-contrib-cookie-warning/dist cookie-warning 
+  ln -s ../../../taiga-contrib-cookie-warning/dist cookie-warning
 ```
 
 Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the information of your Privacy Policy and in the `contribPlugins` list the value `"/plugins/cookie-warning/cookie-warning.json"`:
@@ -54,4 +61,10 @@ Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the informatio
         "/plugins/cookie-warning/cookie-warning.json"
     ]
 ...
+```
+If you only want to build `dist` use:
+
+```bash
+  npm install
+  gulp build
 ```
