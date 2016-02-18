@@ -37,12 +37,7 @@ Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the informatio
 
 #### Taiga Front
 
-```bash
-  npm install
-  gulp
-```
-
-Link `dist` in `taiga-front` plugins directory:
+After clone the repo link `dist` in `taiga-front` plugins directory:
 
 ```bash
   cd taiga-front/dist
@@ -62,9 +57,14 @@ Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the informatio
     ]
 ...
 ```
-If you only want to build `dist` use:
+
+In the plugin source dir `taiga-contrib-cookie-warning` run
 
 ```bash
   npm install
-  gulp build
 ```
+and use:
+
+- `gulp` to regenerate the source and watch for changes.
+- `gulp build` to only regenerate the source.
+
