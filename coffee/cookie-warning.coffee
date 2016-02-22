@@ -37,7 +37,11 @@ template = """
                 summarized by the Cookie Monster himself: "C is for Cookie and Cookie is for me."
             </p>
         </div>
-        <a href="" title="close" class="close"><span class="icon icon-delete"></span></a>
+        <a href="" title="close" class="close">
+            <svg class="icon icon-close">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+            </svg>
+        </a>
     </div>
 </cookie-warning>
 """
