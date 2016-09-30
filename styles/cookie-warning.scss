@@ -1,7 +1,8 @@
+$cookie-gray: #ececec;
+$cookie-green: #72a114;
+$cookie-darkgray: #585858;
+
 cookie-warning {
-    $cookie-gray: #ececec;
-    $cookie-green: #72a114;
-    $cookie-darkgray: #585858;
     background-color: $cookie-gray;
     bottom: 0;
     display: none;
@@ -29,12 +30,12 @@ cookie-warning {
         padding-left: 20px;
     }
     p {
-        @extend %small;
+        font-size: .9rem;
         margin: 0;
     }
     .title {
-        @extend %large;
         color: $cookie-green;
+        font-size: 1.2rem;
         font-weight: 800;
         padding: 0 20px 5px 0;
     }
