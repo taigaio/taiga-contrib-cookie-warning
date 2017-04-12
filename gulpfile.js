@@ -36,7 +36,7 @@ gulp.task('compile-styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch([paths.styles, paths.images, paths.coffee], ['compile-coffee, compile-styles']);
+    gulp.watch([paths.styles, paths.images, paths.coffee], ['compile-coffee', 'compile-styles']);
 });
 
 gulp.task('default', ['copy-config', 'copy-images', 'compile-coffee', 'compile-styles', 'watch']);
