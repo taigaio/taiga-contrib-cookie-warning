@@ -23,7 +23,7 @@
 ###
 
 template = """
-<cookie-warning>
+<cookie-warning style="display:none">
     <div class="center">
         <div class="text">
             <p class="title">
