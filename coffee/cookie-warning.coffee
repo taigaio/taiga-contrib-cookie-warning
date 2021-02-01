@@ -30,7 +30,7 @@ template = """
                 Our site uses cookies to keep running.
             </p>
             <p>
-                Our lawyer, who is one tough cookie, and is himself obsessed with cookies, wants you to know that Taiga uses cookies. He’s a simple-minded man, and requires obvious announcements like this. So here it is: our cookie policy, which you can read more about by clicking here, is best summarized by the Cookie Monster himself: “C is for Cookie and Cookie is for me.”
+                Our lawyer, who is one tough cookie, and is himself obsessed with cookies, wants you to know that Taiga uses cookies. He’s a simple-minded man, and requires obvious announcements like this. So here it is: our cookie policy, which you can read more about by <a target="_blank" href="{{::privacyPolicyUrl }}">clicking here</a>, is best summarized by the Cookie Monster himself: “C is for Cookie and Cookie is for me.”
             </p>
         </div>
         <a href="" title="close" class="close">
