@@ -1,6 +1,6 @@
-$cookie-gray: #ececec;
-$cookie-green: #72a114;
-$cookie-darkgray: #585858;
+$cookie-gray: #ECEFF4;
+$cookie-green: #008AA8;
+$cookie-darkgray: #2E3440;
 
 cookie-warning {
     background-color: $cookie-gray;
@@ -34,8 +34,9 @@ cookie-warning {
     }
     .title {
         color: $cookie-green;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 800;
+        line-height: 28px;
         padding: 0 20px 5px 0;
     }
     .close {
