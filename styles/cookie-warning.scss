@@ -49,7 +49,10 @@ cookie-warning {
         }
     }
     a {
-        color: #000;
+        color: $cookie-green;
+        &:hover {
+            color: #4C566A;
+        }
     }
 }
 
