@@ -1,1 +1,10 @@
+
+/*
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+Copyright (c) 2021-present Kaleidos Ventures SL
+*/
+
 cookie-warning{background-color:#ECEFF4;bottom:0;left:0;position:fixed;width:100%;z-index:9000}cookie-warning .center{display:flex;align-items:center;margin:0 auto;padding:10px 20px 10px 0;position:relative;width:100%}cookie-warning .center:before{flex-shrink:0;background:url("images/cookie.png") center left;background-size:100%;content:'';height:55px;width:55px}cookie-warning .text{padding-left:20px}cookie-warning p{font-size:.9rem;margin:0}cookie-warning .title{color:#008AA8;font-size:1.5rem;font-weight:800;line-height:28px;padding:0 20px 5px 0}cookie-warning .close{font-size:19px;position:absolute;right:20px;top:11px}cookie-warning .close:hover{color:#f00}cookie-warning a{color:#008AA8}cookie-warning a:hover{color:#4C566A}@media screen and (min-width: 1200px){cookie-warning .close{right:0}cookie-warning .center{width:1200px}}
