@@ -4,6 +4,6 @@
     "description": "Show cookie warning message.",
     "type": "misc",
     "module": "cookieWarningPlugin",
-    "css": "/plugins/cookie-warning/cookie-warning.css",
-    "js": "/plugins/cookie-warning/cookie-warning.js"
+    "css": "plugins/cookie-warning/cookie-warning.css",
+    "js": "plugins/cookie-warning/cookie-warning.js"
 }
