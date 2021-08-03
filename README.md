@@ -18,14 +18,14 @@ Download in your `dist/plugins/` directory of Taiga front the `taiga-contrib-coo
   svn export "https://github.com/kaleidos-ventures/taiga-contrib-cookie-warning/branches/stable/dist"  "cookie-warning"
 ```
 
-Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the information of your Privacy Policy and in the `contribPlugins` list the value `"/plugins/cookie-warning/cookie-warning.json"`:
+Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the information of your Privacy Policy and in the `contribPlugins` list the value `"plugins/cookie-warning/cookie-warning.json"`:
 
 ```json
 ...
     "privacyPolicyUrl": "http://example.com/privacy-policy.html"
     "contribPlugins": [
         (...)
-        "/plugins/cookie-warning/cookie-warning.json"
+        "plugins/cookie-warning/cookie-warning.json"
     ]
 ...
 ```
@@ -43,14 +43,14 @@ After clone the repo link `dist` in `taiga-front` plugins directory:
   ln -s ../../../taiga-contrib-cookie-warning/dist cookie-warning
 ```
 
-Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the information of your Privacy Policy and in the `contribPlugins` list the value `"/plugins/cookie-warning/cookie-warning.json"`:
+Include in your `dist/conf.json` in `privacyPolicyUrl` the url to the information of your Privacy Policy and in the `contribPlugins` list the value `"plugins/cookie-warning/cookie-warning.json"`:
 
 ```json
 ...
     "privacyPolicyUrl": "http://example.com/privacy-policy.html"
     "contribPlugins": [
         (...)
-        "/plugins/cookie-warning/cookie-warning.json"
+        "plugins/cookie-warning/cookie-warning.json"
     ]
 ...
 ```
