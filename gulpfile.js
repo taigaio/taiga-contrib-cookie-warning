@@ -7,35 +7,35 @@
  */
 
 var gulp = require('gulp'),
-    coffee = require("gulp-coffee"),
-    concat = require("gulp-concat"),
-    uglify = require("gulp-uglify"),
-    plumber = require("gulp-plumber"),
-    sass = require("gulp-sass"),
-    cached = require("gulp-cached"),
-    remember = require('gulp-remember');
+  coffee = require("gulp-coffee"),
+  concat = require("gulp-concat"),
+  uglify = require("gulp-uglify"),
+  plumber = require("gulp-plumber"),
+  sass = require('gulp-sass')(require('node-sass')),
+  cached = require("gulp-cached"),
+  remember = require('gulp-remember');
 
 var paths = {
-    styles: 'styles/*.scss',
-    coffee: 'coffee/*.coffee',
-    images: 'images/**/*',
-    dist: 'dist/'
+  styles: 'styles/*.scss',
+  coffee: 'coffee/*.coffee',
+  images: 'images/**/*',
+  dist: 'dist/'
 };
 
-gulp.task('copy-config', function() {
+gulp.task('copy-config', function () {
   return gulp
     .src('cookie-warning.json')
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('copy-images', function() {
+gulp.task('copy-images', function () {
   return gulp
     .src(paths.images)
     .pipe(gulp.dest(paths.dist + "images"));
 });
 
 
-gulp.task('compile-coffee', function() {
+gulp.task('compile-coffee', function () {
   return gulp
     .src(paths.coffee)
     .pipe(plumber())
@@ -43,21 +43,21 @@ gulp.task('compile-coffee', function() {
     .pipe(coffee())
     .pipe(remember('coffee'))
     .pipe(concat('cookie-warning.js'))
-    .pipe(uglify({mangle:false, annotations: false}))
+    .pipe(uglify({ mangle: false, annotations: false }))
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('compile-styles', function() {
+gulp.task('compile-styles', function () {
   return gulp
     .src(paths.styles)
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({ outputStyle: 'compressed', annotations: false }))
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('watch', function(cb) {
+gulp.task('watch', function (cb) {
   gulp.watch(paths.styles, gulp.parallel(['compile-styles']));
-  gulp.watch(paths.coffee,gulp.parallel(['compile-coffee']));
-  gulp.watch(paths.images,gulp.parallel(['copy-images']));
+  gulp.watch(paths.coffee, gulp.parallel(['compile-coffee']));
+  gulp.watch(paths.images, gulp.parallel(['copy-images']));
   cb();
 });
 
