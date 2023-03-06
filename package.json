@@ -1,6 +1,6 @@
 {
   "name": "taiga-contrib-cookie-warning",
-  "version": "6.5.0",
+  "version": "6.6.0",
   "description": "Taiga contrib plugin to show the cookie warning message",
   "repository": {
     "type": "git",
