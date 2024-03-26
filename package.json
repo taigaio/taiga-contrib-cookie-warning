@@ -4,7 +4,7 @@
   "description": "Taiga contrib plugin to show the cookie warning message",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaleidos-ventures/taiga-contrib-cookie-warning.git"
+    "url": "https://github.com/taigaio/taiga-contrib-cookie-warning.git"
   },
   "keywords": [
     "taiga",
@@ -13,9 +13,9 @@
   "author": "Kaleidos Ventures SL",
   "license": "MPL-2",
   "bugs": {
-    "url": "https://github.com/kaleidos-ventures/taiga-contrib-cookie-warning/issues"
+    "url": "https://github.com/taigaio/taiga-contrib-cookie-warning/issues"
   },
-  "homepage": "https://github.com/kaleidos-ventures/taiga-contrib-cookie-warning",
+  "homepage": "https://github.com/taigaio/taiga-contrib-cookie-warning",
   "dependencies": {
     "coffeescript": "^1.10.0",
     "node-sass": "8.0.0"
